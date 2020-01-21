@@ -34,7 +34,7 @@ Dieser Fragenkatalog ist der erste Teil eines mehrteiligen Fragenkataloges zur A
 - Package
 - Modul
 
-### Allgemein
+### Allgemein (Haller)
 **Ordner:** Generally
 
 - Beschreiben Sie die einzelnen Schritte beim Erstellungsprozess eines Programms (Compiler, Interpreter, Linker, Make)  
