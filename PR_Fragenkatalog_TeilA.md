@@ -167,8 +167,10 @@ Erläutern Sie die Möglichkeiten Klassen und Objekte zur Laufzeit zu analysiere
 Erläutern Sie das Prinzip und die Idee vom Eventhandling. Geben Sie dazu ein konkretes Beispiel an. Vergleichen Sie diese Technik mit früheren Prinzipien (Polling, Interrupt).
 
 ## Design Pattern
+**Ordner** Patterns
 
 ### Singleton (Seidl)
+**Datei** Singleton.md
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
@@ -178,7 +180,8 @@ Beschreiben Sie das Muster nach den folgenden Punkten:
 - Anwendbarkeit
 - Struktur des Musters
 
-### Iterator
+### Iterator (Haller)
+**Datei** Iterator.md
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
@@ -189,6 +192,7 @@ Beschreiben Sie das Muster nach den folgenden Punkten:
 - Struktur des Musters
 
 ### Observer Pattern (Hlavacek)
+**Datei** Observer.md
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
@@ -198,7 +202,8 @@ Beschreiben Sie das Muster nach den folgenden Punkten:
 - Anwendbarkeit
 - Struktur des Musters
 
-### Model View Control (MVC) Pattern
+### Model View Control (MVC) Pattern (Walchetseder)
+**Datei** Mvc.md
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
@@ -209,6 +214,7 @@ Beschreiben Sie das Muster nach den folgenden Punkten:
 - Struktur des Musters
 
 ### Model View View-Model (MVVM) Pattern (Freudenthaler)
+**Datei** MvvM.md
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
