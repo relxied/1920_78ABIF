@@ -24,6 +24,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generally", "Generally", "{
 		OOP\Generally\Garbage.md = OOP\Generally\Garbage.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concepts", "Concepts", "{2CBA8BC6-7C6C-4F7C-9497-ECDCAEBA33C2}"
+	ProjectSection(SolutionItems) = preProject
+		Inheritance.md = Inheritance.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
