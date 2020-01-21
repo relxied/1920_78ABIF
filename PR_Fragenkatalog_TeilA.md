@@ -6,7 +6,7 @@ Dieser Fragenkatalog ist der erste Teil eines mehrteiligen Fragenkataloges zur A
 **Ordner:** Terms
 
 ### Erklären Sie die folgenden Begriffe im Zusammenhang (Gegenüberstellung):  
-**Datei:** Comparison.md
+**Datei:** Comparison.md (Bozbey)
 
 - Spezifikation \<-\> Verifikation
 - Algorithmus \<-\> Programm
@@ -16,7 +16,7 @@ Dieser Fragenkatalog ist der erste Teil eines mehrteiligen Fragenkataloges zur A
 - Call by value \<-\> Call by reference
 
 ### Erklären Sie die folgenden abstrakten Datenstrukturen:
-**Datei:** DataStructures.md
+**Datei:** DataStructures.md (Freudenthaler)
 
 - Stack
 - Queue
@@ -24,7 +24,7 @@ Dieser Fragenkatalog ist der erste Teil eines mehrteiligen Fragenkataloges zur A
 - Collection
 
 ### Ordnen Sie die nachfolgenden Begriffe nach ihrer Entstehung und erläutern Sie die Bedeutung:
-**Datei:** OrderTerms.md
+**Datei:** OrderTerms.md (Engleder)
 
 - Bibliothek
 - Unterprogramm
@@ -77,7 +77,7 @@ Alle Fragen in diesem Abschnitt betreffen objektorientierte Programmier-Aspekte 
 - Erläutern Sie das 'Boxing und Unboxing' (geben Sie dazu ein Beispiel an)  
 **Datei:** BoxingAndUnboxing.md
 
-### Prinzipien  
+### Prinzipien  (Pechak)
 **Ordner:** Principle
 
 Erklären Sie die folgenden Prinzipien, die in der OOP angewendet werden
@@ -89,7 +89,7 @@ Erklären Sie die folgenden Prinzipien, die in der OOP angewendet werden
 - Vererbung,
 - Polymorphismus
 
-### Konzepte  
+### Konzepte (Pechak)
 **Ordner:** Concepts
 
 Erklären Sie die folgenden Begriffe im Zusammenhang (Gegenüberstellung):
@@ -124,15 +124,15 @@ Erklären Sie den Unterschied zwischen einer
 - 'Rein virtuelle Methoden' und einer
 - 'virtuelle Methoden'
 
-### Konzept/Vererbung
+### Konzept/Vererbung (Hlavacek)
 
 - Erklären Sie die Relation der _Vererbung_ und geben Sie Entscheidungshilfen zur Evaluierung von _Vererbungsstrukturen_ an (nennen Sie mindestens ein Beispiel für eine gültige und eine ungültige Vererbung).
 
 - Erklären Sie welche Bedeutung die _Konstruktoren_ in der Vererbung haben und geben Sie anhand eines Beispiels an, wie die unterschiedlichen _Konstruktoren_ miteinander verkettet werden können.
 
-- Erläutern Sie das Konzept „_Interface&quot;_  und geben Sie ein entsprechendes Szenario für den Einsatz an.
+- Erläutern Sie das Konzept _Interface_  und geben Sie ein entsprechendes Szenario für den Einsatz an.
 
-- Erklären Sie das Konzept „Polymorphie&quot; und geben Sie ein konkretes Beispiel, welches den Einsatz dieses Konzeptes demonstriert, an.
+- Erklären Sie das Konzept 'Polymorphie' und geben Sie ein konkretes Beispiel, welches den Einsatz dieses Konzeptes demonstriert, an.
 
 - Erklären Sie das „_Überschreiben von Instanzmethoden_&quot; und das dynamische Binden von Methoden (verwenden Sie zur Erläuterung ein konkretes Beispiel).
 
@@ -144,13 +144,13 @@ Erklären Sie den Unterschied zwischen einer
 
 - Stellen Sie die beiden Konzepte _Abstrakte Klassen_  und _Interfaces_  gegenüber und geben Sie Entscheidungshilfen zur richtigen Konzeptauswahl an.
 
-### Technik/Serialisierung
+### Technik/Serialisierung (Peterseil)
 
 - Erklären Sie die Technik 'Serialisierung von Objekten' und 'Deserialisierung von Objekten'.
 
 - Serialisierung und Deserialisierung ist eine wichtige Basistechnik für weitere höhere (Architektur-)Konzepte. Nennen Sie eine weitere Technik, welche Serialisierung und Deserialisierung als Basis verwendet.
 
-### Technik/Generische Typen
+### Technik/Generische Typen (Seidl)
 
 - Erklären Sie die Technik 'Generizität' und erläutern Sie die Verwendung dieser Technik (konstruieren Sie ein einfaches Beispiel).
 
@@ -158,17 +158,17 @@ Erklären Sie den Unterschied zwischen einer
 
 - Was sind Einschränkungen und welche Bedeutung haben diese im Bezug auf Generische Typen (skizzieren Sie ein Beispiel)?
 
-### Technik/Reflection
+### Technik/Reflection (Eichinger)
 
 Erläutern Sie die Möglichkeiten Klassen und Objekte zur Laufzeit zu analysieren. Skizzieren Sie einen Anwendungsfall aus der Praxis.
 
-### Technik/Eventhandling
+### Technik/Eventhandling (Eichinger)
 
 Erläutern Sie das Prinzip und die Idee vom Eventhandling. Geben Sie dazu ein konkretes Beispiel an. Vergleichen Sie diese Technik mit früheren Prinzipien (Polling, Interrupt).
 
 ## Design Pattern
 
-### Singleton
+### Singleton (Seidl)
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
@@ -188,7 +188,7 @@ Beschreiben Sie das Muster nach den folgenden Punkten:
 - Anwendbarkeit
 - Struktur des Musters
 
-### Observer Pattern
+### Observer Pattern (Hlavacek)
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
@@ -208,7 +208,7 @@ Beschreiben Sie das Muster nach den folgenden Punkten:
 - Anwendbarkeit
 - Struktur des Musters
 
-### Model View View-Model (MVVM) Pattern
+### Model View View-Model (MVVM) Pattern (Freudenthaler)
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
