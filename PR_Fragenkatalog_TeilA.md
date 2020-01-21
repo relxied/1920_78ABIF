@@ -59,7 +59,7 @@ Dieser Fragenkatalog ist der erste Teil eines mehrteiligen Fragenkataloges zur A
 Alle Fragen in diesem Abschnitt betreffen objektorientierte Programmier-Aspekte und sind in der CSharp – Terminologie zu beantworten. Auch Beispiele, welche mit den Fragen angegeben, sind in der CSharp-Syntax anzugeben.
 
 ### Allgemein
-**Ordner:** Genrally
+**Ordner:** Generally
 
 - Erklären Sie die Konzepte der Unified Modeling Language – UML in Bezug auf die objektorientierten Programmierung (Diagrammtypen mit Erläuterung über die Syntax).  
 **Datei:** UmlDiagrams.md
@@ -125,6 +125,7 @@ Erklären Sie den Unterschied zwischen einer
 - 'virtuelle Methoden'
 
 ### Konzept/Vererbung (Hlavacek)
+**Datei:** Inheritance.md
 
 - Erklären Sie die Relation der _Vererbung_ und geben Sie Entscheidungshilfen zur Evaluierung von _Vererbungsstrukturen_ an (nennen Sie mindestens ein Beispiel für eine gültige und eine ungültige Vererbung).
 
@@ -145,12 +146,14 @@ Erklären Sie den Unterschied zwischen einer
 - Stellen Sie die beiden Konzepte _Abstrakte Klassen_  und _Interfaces_  gegenüber und geben Sie Entscheidungshilfen zur richtigen Konzeptauswahl an.
 
 ### Technik/Serialisierung (Peterseil)
+**Datei:** Serializable.md
 
 - Erklären Sie die Technik 'Serialisierung von Objekten' und 'Deserialisierung von Objekten'.
 
 - Serialisierung und Deserialisierung ist eine wichtige Basistechnik für weitere höhere (Architektur-)Konzepte. Nennen Sie eine weitere Technik, welche Serialisierung und Deserialisierung als Basis verwendet.
 
 ### Technik/Generische Typen (Seidl)
+**Datei:** Generics.md
 
 - Erklären Sie die Technik 'Generizität' und erläutern Sie die Verwendung dieser Technik (konstruieren Sie ein einfaches Beispiel).
 
@@ -159,10 +162,12 @@ Erklären Sie den Unterschied zwischen einer
 - Was sind Einschränkungen und welche Bedeutung haben diese im Bezug auf Generische Typen (skizzieren Sie ein Beispiel)?
 
 ### Technik/Reflection (Eichinger)
+**Datei:** Reflection.md
 
 Erläutern Sie die Möglichkeiten Klassen und Objekte zur Laufzeit zu analysieren. Skizzieren Sie einen Anwendungsfall aus der Praxis.
 
 ### Technik/Eventhandling (Eichinger)
+**Datei:** Events.md
 
 Erläutern Sie das Prinzip und die Idee vom Eventhandling. Geben Sie dazu ein konkretes Beispiel an. Vergleichen Sie diese Technik mit früheren Prinzipien (Polling, Interrupt).
 
