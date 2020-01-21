@@ -10,6 +10,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Principle", "Principle", "{92A5BEE4-C86C-4A90-ADCC-BC7687FE4AE0}"
+	ProjectSection(SolutionItems) = preProject
+		OopPrinciple.md = OopPrinciple.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concepts", "Concepts", "{468758DC-F22C-4EFA-AC77-60AA21833472}"
+	ProjectSection(SolutionItems) = preProject
+		OopConcepts.md = OopConcepts.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
