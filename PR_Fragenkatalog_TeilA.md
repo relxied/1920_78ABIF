@@ -43,7 +43,7 @@ Dieser Fragenkatalog ist der erste Teil eines mehrteiligen Fragenkataloges zur A
 (Unterschied gegenüber der Fehlerbehandlung mit Rückgabewert)  
 **Datei:** ExceptionHandling.md
 
-### Ablaufsteuerung  
+### Ablaufsteuerung  (Trnka)
 **Ordner:** FlowControl
 
 - Beschreiben Sie ausführlich die Grundelemente zur Steuerung des Programmablaufes.  
@@ -53,7 +53,7 @@ Dieser Fragenkatalog ist der erste Teil eines mehrteiligen Fragenkataloges zur A
 - Skizzieren Sie anhand eines Beispiels die möglichen Ausführungspfade bei der Anwendung von _try_, _catch_ und _finally_ Blöcken. Zur Erläuterung der möglichen Ausführungspfade geben Sie Beispiel an.  
 **Datei:** TryCatch.md
 
-## Objektorientierung
+## Objektorientierung (Engleder)
 **Ordner:** OOP
 
 Alle Fragen in diesem Abschnitt betreffen objektorientierte Programmier-Aspekte und sind in der CSharp – Terminologie zu beantworten. Auch Beispiele, welche mit den Fragen angegeben, sind in der CSharp-Syntax anzugeben.
@@ -73,7 +73,7 @@ Alle Fragen in diesem Abschnitt betreffen objektorientierte Programmier-Aspekte 
 - Erläutern Sie die Arbeits- und Funktionsweise des Garbage-Collectors  
 **Datei:** Garbage.md
 - Erklären Sie die Bedeutung und den Vorteil eines  'Einheitliches Typsystem'  
-**Datei:** TypSystem.md
+**Datei:** TypeSystem.md
 - Erläutern Sie das 'Boxing und Unboxing' (geben Sie dazu ein Beispiel an)  
 **Datei:** BoxingAndUnboxing.md
 
