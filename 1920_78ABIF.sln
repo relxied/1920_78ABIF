@@ -12,9 +12,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Serializable.md = Serializable.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Terms", "Terms", "{C9273CFD-0501-41E9-807C-B6317370F591}"
+	ProjectSection(SolutionItems) = preProject
+		OrderTerms.md = OrderTerms.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{7F175C29-E004-4320-9000-BA1370816047}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generally", "Generally", "{B186FF18-6F45-4163-8722-12F90159066F}"
+	ProjectSection(SolutionItems) = preProject
+		OOP\Generally\Garbage.md = OOP\Generally\Garbage.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9273CFD-0501-41E9-807C-B6317370F591} = {1ADEF5B3-B3AB-41FA-A0B7-4F39641C93A3}
+		{7F175C29-E004-4320-9000-BA1370816047} = {1ADEF5B3-B3AB-41FA-A0B7-4F39641C93A3}
+		{B186FF18-6F45-4163-8722-12F90159066F} = {7F175C29-E004-4320-9000-BA1370816047}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76745DB8-3F30-4DB6-963A-FF42BB86ACC4}

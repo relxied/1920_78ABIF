@@ -53,7 +53,7 @@ Dieser Fragenkatalog ist der erste Teil eines mehrteiligen Fragenkataloges zur A
 - Skizzieren Sie anhand eines Beispiels die möglichen Ausführungspfade bei der Anwendung von _try_, _catch_ und _finally_ Blöcken. Zur Erläuterung der möglichen Ausführungspfade geben Sie Beispiel an.  
 **Datei:** TryCatch.md
 
-## Objektorientierung (Engleder)
+## Objektorientierung
 **Ordner:** OOP
 
 Alle Fragen in diesem Abschnitt betreffen objektorientierte Programmier-Aspekte und sind in der CSharp – Terminologie zu beantworten. Auch Beispiele, welche mit den Fragen angegeben, sind in der CSharp-Syntax anzugeben.
@@ -70,7 +70,7 @@ Alle Fragen in diesem Abschnitt betreffen objektorientierte Programmier-Aspekte 
 **Datei:** CloneCopy.md
 - Erklären Sie die Gleichheit von Objekten (erklären Sie wann 2 Objekte gleich sind und erläutern Sie den Equals/HashCode Vertrag).  
 **Datei:** EqualsHashCode.md
-- Erläutern Sie die Arbeits- und Funktionsweise des Garbage-Collectors  
+- Erläutern Sie die Arbeits- und Funktionsweise des Garbage-Collectors  (Engleder)
 **Datei:** Garbage.md
 - Erklären Sie die Bedeutung und den Vorteil eines  'Einheitliches Typsystem'  
 **Datei:** TypeSystem.md
