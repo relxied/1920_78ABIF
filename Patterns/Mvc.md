@@ -29,7 +29,7 @@ _**Nachteil:**_
 
 
 - **Struktur des Musters**  
-![MVC-Model](MVC_model.png)  
+![MVC_model](MVC_model.png)  
 *Quellen (links):*  [hs-augsburg.de](https://glossar.hs-augsburg.de/Model-View-Controller-Paradigma) | 
 [rheinwerk-verlag.de](http://openbook.rheinwerk-verlag.de/oop/oop_kapitel_08_002.htm) | 
 [inztitut.de](http://www.inztitut.de/blog/glossar/model-view-controller/)  
