@@ -209,7 +209,6 @@ Beschreiben Sie das Muster nach den folgenden Punkten:
 
 ### Model View Control (MVC) Pattern (Walchetseder)
 **Datei** Mvc.md  
--test 123
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
