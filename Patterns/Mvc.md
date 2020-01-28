@@ -4,7 +4,7 @@
 
 Beschreiben Sie das Muster nach den folgenden Punkten:
 
-- **Klassifikation** MVC ist in drei Komponenten geteilt: *Model, View und Controller*.
+- **Klassifikation** Gehört in die _Kategorie Architektur-Pattern_.
 - **Zweck** des Musters ist ein _flexibler Programmentwurf_, der eine spätere _Änderung_ oder _Erweiterung erleichtert_ und eine _Wiederverwendbarkeit der einzelnen Komponenten_ ermöglicht.
 
 - **Entwurfsproblem und wie das Muster das Problem löst**  
@@ -32,4 +32,4 @@ _**Nachteil:**_
 ![MVC_model](MVC_Model.png)  
 *Quellen (links):*  [hs-augsburg.de](https://glossar.hs-augsburg.de/Model-View-Controller-Paradigma) | 
 [rheinwerk-verlag.de](http://openbook.rheinwerk-verlag.de/oop/oop_kapitel_08_002.htm) | 
-[inztitut.de](http://www.inztitut.de/blog/glossar/model-view-controller/)  
+[inztitut.de](http://www.inztitut.de/blog/glossar/model-view-controller/)   
