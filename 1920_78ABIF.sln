@@ -28,6 +28,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concepts", "Concepts", "{BF
 		Concepts\Serializable.md = Concepts\Serializable.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FlowControl", "FlowControl", "{D90C1306-FC54-42DF-9907-DC43136E8BDF}"
+	ProjectSection(SolutionItems) = preProject
+		BaseElements.md = BaseElements.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +42,7 @@ Global
 		{7F175C29-E004-4320-9000-BA1370816047} = {1ADEF5B3-B3AB-41FA-A0B7-4F39641C93A3}
 		{B186FF18-6F45-4163-8722-12F90159066F} = {7F175C29-E004-4320-9000-BA1370816047}
 		{BF6D70EB-E523-42E3-B135-5E8EBB148363} = {1ADEF5B3-B3AB-41FA-A0B7-4F39641C93A3}
+		{D90C1306-FC54-42DF-9907-DC43136E8BDF} = {1ADEF5B3-B3AB-41FA-A0B7-4F39641C93A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {76745DB8-3F30-4DB6-963A-FF42BB86ACC4}
