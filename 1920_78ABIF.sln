@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Terms", "Terms", "{C9273CFD-0501-41E9-807C-B6317370F591}"
 	ProjectSection(SolutionItems) = preProject
-		OrderTerms.md = OrderTerms.md
+		Terms\OrderTerms.md = Terms\OrderTerms.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{7F175C29-E004-4320-9000-BA1370816047}"
