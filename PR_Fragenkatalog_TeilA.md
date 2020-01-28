@@ -61,12 +61,12 @@ Alle Fragen in diesem Abschnitt betreffen objektorientierte Programmier-Aspekte 
 ### Allgemein
 **Ordner:** Generally
 
-- Erklären Sie die Konzepte der Unified Modeling Language – UML in Bezug auf die objektorientierten Programmierung (Diagrammtypen mit Erläuterung über die Syntax).  
+- Erklären Sie die Konzepte der Unified Modeling Language – UML in Bezug auf die objektorientierten Programmierung (Diagrammtypen mit Erläuterung über die Syntax).  (Mühleder)
 **Datei:** UmlDiagrams.md
-- Erstellen Sie ein UML/CLD für ein Beispiel Ihrer Wahl und erläutern Sie alle Möglichkeiten dieses Diagrammtyps (falls notwendig, können auch mehrere Beispiele angegeben werden).  
+- Erstellen Sie ein UML/CLD für ein Beispiel Ihrer Wahl und erläutern Sie alle Möglichkeiten dieses Diagrammtyps (falls notwendig, können auch mehrere Beispiele angegeben werden).  (Mühleder)
 **Datei:** UmlClassDiagrams.md
-- Erläutern Sie wie die Relationen zwischen Klassen aus dem UML/CLD in der OOP implementiert werden (verwenden Sie zur Erläuterung ein Beispiel).
-- Erläutern Sie oberflächliches und tiefes Klonen von Objekten (auf welche Arten können Objekte geklont werden)  
+- Erläutern Sie wie die Relationen zwischen Klassen aus dem UML/CLD in der OOP implementiert werden (verwenden Sie zur Erläuterung ein Beispiel).	(Mühleder)
+- Erläutern Sie oberflächliches und tiefes Klonen von Objekten (auf welche Arten können Objekte geklont werden)		(Mühleder)
 **Datei:** CloneCopy.md
 - Erklären Sie die Gleichheit von Objekten (erklären Sie wann 2 Objekte gleich sind und erläutern Sie den Equals/HashCode Vertrag).  
 **Datei:** EqualsHashCode.md
