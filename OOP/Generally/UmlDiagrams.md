@@ -1,0 +1,1 @@
+- Erklären Sie die Konzepte der Unified Modeling Language – UML in Bezug auf die objektorientierten Programmierung (Diagrammtypen mit Erläuterung über die Syntax).
