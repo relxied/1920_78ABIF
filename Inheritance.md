@@ -53,7 +53,7 @@ public ClassA : IIdentifiable
 }
 ```
 
-<span style="color:darkblue">Durch Interfaces ist mehrfachvererbung möglich.
+<span style="color:darkblue">Durch Interfaces ist mehrfache Vererbung möglich.
 </span>  
 
 Beispiel:
@@ -117,6 +117,30 @@ public ClassA : IEntityObject
 - Erklären Sie das Konzept 'Polymorphie' und geben Sie ein konkretes Beispiel, welches den Einsatz dieses Konzeptes demonstriert, an.
 
 - Erklären Sie das „_Überschreiben von Instanzmethoden_&quot; und das dynamische Binden von Methoden (verwenden Sie zur Erläuterung ein konkretes Beispiel).
+
+<span style="color:darkblue">Um eine Methode überschreiben zu können muss diese mit **abstract** oder **virtual** gekennzeichnet sein. Methoden die mit **virtual** gekennzeichnet sind, **können** überschrieben werden, **abstract** Methoden **müssen** überschrieben werden.  
+Mit dem Schlüsselwort ++*override*++ muss die Methode gekennzeichnent werden die die virtual bzw. abstract Methode überschreibt.
+</span>  
+
+Beispiel:
+
+```csharp
+public ClassA
+{
+	public virtual PrintInfo()
+	{
+		console.WriteLine("C#");
+	}
+}
+
+public ClassB : ClassA
+{
+	public override PrintInfo()
+	{
+		console.WriteLine("Java");
+	}
+}
+```
 
 - Erläutern Sie das Konzept _Abstrakte Klassen_ und geben Sie ein entsprechendes Szenario für den Einsatz an.
 
