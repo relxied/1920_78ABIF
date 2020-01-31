@@ -8,13 +8,126 @@
 
 ## Antworten
 #### Abstraktion
-Abstraktion beschreibt die Trennung zwischen **Konzept** und **Umsetzung**
+Als Abstraktion versteht man nur diejenigen Dinge von einem Objekt zu nehmen, die auch benötigt werden.
+Abstraktion einers Schülers:
+```
+public class Pupil() : Person
+{
+    public string Firstname { get; set; }
+    public string Lastname { get; set; }
+    public string Class { get; set; }
+    public int Age { get; set;}
+}
+```
+Abstraktion eines Lehrers:
+```
+public class Teacher() : Person
+{
+    public string Firstname { get; set; }
+    public string Lastname { get; set; }
+    public int Age { get; set; }
+    public bool HasDriverLicence { get; set; }
+    public Date Hiredate { get; private set; }
+}
+```
+Das obige Beispiel zeigt deutlich welche Merkmale eines Schülers und welche eines Lehrers wichtig sind für die Anwendung. Allgemeine Sachen, wie zum Beispiel die Sozialversicherungsnummer , die sowohl ein Schüler als auch ein Lehrer besitzen, ist für diese Anwendung nicht relevant.
 
+#### Datenkapselung (information hiding)
+Als Datenkapselung versteht man das Verbergen von Informationen vor dem direkten Zugriff von außen.
+Ein direkter Zugriff auf die interne Datenstruktur wird damit unterbunden und wird per definierte Schnittstellen (Interfaces) ermöglicht.
+In der Objektorientierten Programmierung (OOP) ist die Datenkapselung auch ein wichtiges Prinzip.  
+Sie wird verwendet, damit Klassen nicht den internen Zustand anderer Klassen lesen oder sogar verändern können. Durch die Kapselung werden nur Angaben über das "WAS" (Funktionswiese) nach außen sichtbar aber nicht das "WIE" (die interne Darstellung)
+Verwendete Zugriffsarten in C#:
++ **public (+)**  
+  Zugreifbar für alle Objekte (auch die der anderen Klassen)
++ **private (-)**  
+  Nur für Objekte der eigenen Klasse zugreifbar
++ **protected (#)**  
+  Nur für Objekte der eigenen Klasse und von Spezialisierungen derselben zugreifbar
+#### Vererbung
+#### Allgemeine Typen der Vererbung (Inheritance):
+In der OOP gibt es einige Arten der Vererbung. Die nachstehenede Liste beschreibt diese und erläutert, welche der vier angeführten Vererbungen in C# möglich sind.
++ **Einfache Vererbung (single inheritance)**
+  Mit der einfachen Vererbung erbt eine Klasse von der anderen. Dies ist ein mögliches Szenario in C#
+```
+public class A
+{
+    // members
+}
+public class B : A
+{
+    // members
+}
+```
++ **Mehrfache Vererbung (multiple inheritance)**
+  Die mehrfache Vererbung erlöaubt es , dass eine Klasse von mehreren Basis-Klassen ableitet. Dieses Szenario ist in C# nicht möglich, es gibt jedoch die Möglichkeit, von mehreren Schnittstellen (Interfaces) abzuleiten  
 
+Folgene Darstellung ist in C# **nicht** möglich!
+```
+public class A
+{
+    // members
+}
 
+public class B
+{
+    // members
+}
 
+public class C : A, B
+{
+    // members
+}
+```
++ **Mehrstufige Vererbung (multilevel inheritance)**
+  Die mehrstufige Vererbung ermöglicht die Vererbung über mehrerer Ebenen.  
 
+Folgende Darstellung zeigt, dass B von A erbt und C wiederrum von B erbt:
+```
+public class A
+{
+    // members
+}
 
-#### Datenkapselung (information hiding),
-#### Vererbung,
+public class B : A
+{
+    // members
+}
+
+public class C : B
+{
+    // members
+}
+```
+
++ **Schnittstellen Vererbung (inferface inheritance)**
+  Die Schnittstellen verebbung ermöglicht, dass eine Klasse oder eine Schnittstelle von mehreren Schnittstellen ableitet.
+```
+public interface IIdentifiable
+{
+    // members
+}
+
+public interface ICopyable
+{
+    // members
+}
+
+// Mögliches Szenario wenn eine Schnittstelle von mehrern Schnitstellen ableitet:
+
+public interface IMyInterface : IIdentifiable, ICopyable<IMyInterface>
+{
+    // members
+}
+
+// Mögliches Szenario wenn eine Klasse von mehrern Schnitstellen ableitet:
+
+public abstract class GenericController<I, M> : ControllerBase
+        where I : IIdentifiable
+        where M : Transfer.TransferObject, I, Contracts.ICopyable<I>, new()
+{
+    // members
+}
+
+```
 #### Polymorphismus
