@@ -241,6 +241,9 @@ Beispiel:
 
 - Erläutern Sie das Konzept _Abstrakte Klassen_ und geben Sie ein entsprechendes Szenario für den Einsatz an.
 
+<span style="color:darkblue"> Abstrakt Klassen müssen mit dem Schlüsselwort abstract gekennzeichnent sein. In einer abstrakten Klasse gibt es ähnlich wie beim Interface, **keine** implementierten Methoden. Die Methoden müssen ebenso mit abstract gekennzeichnet sein. Eine abstrakte Klasse **kann nicht instanziert werden**. Die Implementation der abstrakten Methoden erfolgen mit dem ++*override*++ Schlüsselwort. Abstrakte Methoden **müssen** überschrieben werden. 
+</span>  
+
 - Erläutern Sie das Konzept _Mehrfachvererbung_ und geben Sie ein entsprechendes Szenario für den Einsatz an.
 
 - Stellen Sie die beiden Konzepte _Vererbung_ und _Komposition_ gegenüber und geben Sie Entscheidungshilfen zur richtigen Konzeptauswahl an.
