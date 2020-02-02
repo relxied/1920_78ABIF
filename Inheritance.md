@@ -241,8 +241,52 @@ Beispiel:
 
 - Erläutern Sie das Konzept _Abstrakte Klassen_ und geben Sie ein entsprechendes Szenario für den Einsatz an.
 
-<span style="color:darkblue"> Abstrakt Klassen müssen mit dem Schlüsselwort abstract gekennzeichnent sein. In einer abstrakten Klasse gibt es ähnlich wie beim Interface, **keine** implementierten Methoden. Die Methoden müssen ebenso mit abstract gekennzeichnet sein. Eine abstrakte Klasse **kann nicht instanziert werden**. Die Implementation der abstrakten Methoden erfolgen mit dem ++*override*++ Schlüsselwort. Abstrakte Methoden **müssen** überschrieben werden. 
+<span style="color:darkblue"> Abstrakt Klassen müssen mit dem Schlüsselwort abstract gekennzeichnent sein. In einer abstrakten Klasse gibt es ähnlich wie beim Interface, **keine** implementierten Methoden. Die Methoden müssen ebenso mit abstract gekennzeichnet sein. Eine abstrakte Klasse **kann nicht instanziert werden**. Die Implementation der abstrakten Methoden erfolgen mit dem ++*override*++ Schlüsselwort. Abstrakte Methoden **müssen** überschrieben werden. Abstrakte Klasse beinhalten abstrakte Member, können aber auch nicht-abstrakte Member beinhalten.
 </span>  
+
+Beispiel :
+
+```csharp
+        class Program
+    {
+        static void Main(string[] args)
+        {
+            B person = new B();
+            person.print();
+            person.PrintAge();
+            Console.ReadKey();
+        }
+    }
+
+    abstract public class A
+    {
+        private int age = 27;
+        
+        //Abstract muss überschrieben werden
+        public abstract void print();
+
+        //wird weitervererbt und kann verwendet werden
+        public void PrintAge()
+        {
+            Console.WriteLine("Alter: " + age);
+        }
+    }
+
+    public class B : A
+    {
+        private string job = "programmer";
+        
+        //Überschrieben Methode
+        public override void print()
+        {
+            Console.WriteLine($"Martin arbeitet als {job}");
+        }
+    }
+
+    // Output: 
+    // Martin arbeitet als programmer
+    // Alter: 27
+```
 
 - Erläutern Sie das Konzept _Mehrfachvererbung_ und geben Sie ein entsprechendes Szenario für den Einsatz an.
 
