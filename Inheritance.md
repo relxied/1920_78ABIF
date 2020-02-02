@@ -119,27 +119,124 @@ public ClassA : IEntityObject
 - Erklären Sie das „_Überschreiben von Instanzmethoden_&quot; und das dynamische Binden von Methoden (verwenden Sie zur Erläuterung ein konkretes Beispiel).
 
 <span style="color:darkblue">Um eine Methode überschreiben zu können muss diese mit **abstract** oder **virtual** gekennzeichnet sein. Methoden die mit **virtual** gekennzeichnet sind, **können** überschrieben werden, **abstract** Methoden **müssen** überschrieben werden.  
-Mit dem Schlüsselwort ++*override*++ muss die Methode gekennzeichnent werden die die virtual bzw. abstract Methode überschreibt.
+Mit dem Schlüsselwort ++*override*++ muss die Methode gekennzeichnent werden die die virtual bzw. abstract Methode überschreibt. Mit dem Schlüsselwort base wird die Methode der Oberklasse aufgerufen und danach erst die Methode der aktuellen Klasse.
 </span>  
 
 Beispiel:
 
 ```csharp
-public ClassA
-{
-	public virtual PrintInfo()
-	{
-		console.WriteLine("C#");
-	}
-}
+    public class A
+    {
+        private string name = "Martin";
 
-public ClassB : ClassA
-{
-	public override PrintInfo()
-	{
-		console.WriteLine("Java");
-	}
-}
+        public virtual void PrintInfo()
+        {
+            Console.WriteLine(name);
+        }
+
+    }
+
+    public class B : A
+    {
+        private string job = "programmer";
+
+        public override void PrintInfo()
+        {
+            base.PrintInfo();
+            Console.WriteLine(job);
+        }
+    }
+
+   	//Output:
+        // Martin
+        // programmer
+	
+```
+
+<span style="color:darkblue"> Dadurch ist es möglich return Parameter aneinander zu reihen und mit Informationen zu erweitern, ohne Code verdoppelung zu verursachen.
+</span>  
+
+Beispiel:
+
+```csharp
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            B person = new B();
+            Console.WriteLine(person.PrintInfo());
+            Console.ReadKey();
+        }
+    }
+
+    public class A
+    {
+        private string name = "Martin";
+
+        public virtual string PrintInfo()
+        {
+            return name;
+        }
+
+    }
+
+    public class B : A
+    {
+        private string job = "programmer";
+
+        public override string PrintInfo()
+        {
+             return base.PrintInfo() + " " + job;
+        }
+    }
+
+   	//Output:
+        // Martin programmer
+
+	
+```
+
+<span style="color:darkblue"> Ein klassisches Beispiel ist die ToString() Methode, da man alle Informationen die man Ausgeben will, aneinander reihen kann.
+</span>  
+
+Beispiel:
+
+```csharp
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            B person = new B();
+            Console.WriteLine(person.ToString());
+            Console.ReadKey();
+        }
+    }
+
+    public class A
+    {
+        private string name = "Martin";
+
+        public override string ToString()
+        {
+            return name;
+        }
+
+    }
+
+    public class B : A
+    {
+        private string job = "programmer";
+
+        public override string ToString()
+        {
+            return base.ToString() + " arbeitet als " + job;
+        }
+    }
+   	//Output:
+        // Martin arbeitet als programmer
+
+	
 ```
 
 - Erläutern Sie das Konzept _Abstrakte Klassen_ und geben Sie ein entsprechendes Szenario für den Einsatz an.
