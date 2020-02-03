@@ -119,7 +119,7 @@ public ClassA : IEntityObject
 - Erklären Sie das „_Überschreiben von Instanzmethoden_&quot; und das dynamische Binden von Methoden (verwenden Sie zur Erläuterung ein konkretes Beispiel).
 
 <span style="color:darkblue">Um eine Methode überschreiben zu können muss diese mit **abstract** oder **virtual** gekennzeichnet sein. Methoden die mit **virtual** gekennzeichnet sind, **können** überschrieben werden, **abstract** Methoden **müssen** überschrieben werden.  
-Mit dem Schlüsselwort ++*override*++ muss die Methode gekennzeichnent werden die die virtual bzw. abstract Methode überschreibt. Mit dem Schlüsselwort base wird die Methode der Oberklasse aufgerufen und danach erst die Methode der aktuellen Klasse.
+Mit dem Schlüsselwort ++*override*++ muss die Methode gekennzeichnent werden die die virtual bzw. abstract Methode überschreibt. Mit dem Schlüsselwort base wird die Methode der Oberklasse aufgerufen und danach erst die Methode der aktuellen Klasse. Dadurch wird **dynamisches Binden** ermöglicht, da die override Methode und die virtual Methode dynamisch miteinander gebunden werden.
 </span>  
 
 Beispiel:
@@ -153,7 +153,7 @@ Beispiel:
 	
 ```
 
-<span style="color:darkblue"> Dadurch ist es möglich return Parameter aneinander zu reihen und mit Informationen zu erweitern, ohne Code verdoppelung zu verursachen.
+<span style="color:darkblue"> Dadurch ist es möglich return Parameter aneinander zu reihen und mit Informationen zu erweitern, ohne Code verdoppelung zu verursachen. 
 </span>  
 
 Beispiel:
@@ -290,9 +290,93 @@ Beispiel :
 
 - Erläutern Sie das Konzept _Mehrfachvererbung_ und geben Sie ein entsprechendes Szenario für den Einsatz an.
 
+<span style="color:darkblue"> Mehrfachvererbung ist nur mit Interfaces möglich. Klassen können in C# nicht von mehreren Klassen erben. 
+</span> 
+
+Beispiel:
+
+```csharp
+public Interface IIdentifiable
+{
+	int id { get; }
+}
+
+public Interface ICopyName
+{
+	void CopyName(string otherName)
+}
+
+public ClassA : IIdentifiable, ICopyName
+{
+	public string name;
+	public int id { get; set; }
+
+	void CopyName(string otherName)
+	{
+		name = otherName;
+	}
+}
+```
+
 - Stellen Sie die beiden Konzepte _Vererbung_ und _Komposition_ gegenüber und geben Sie Entscheidungshilfen zur richtigen Konzeptauswahl an.
 
 - Stellen Sie die beiden Konzepte _Abstrakte Klassen_  und _Interfaces_  gegenüber und geben Sie Entscheidungshilfen zur richtigen Konzeptauswahl an.
+
+<span style="color:darkblue"> Interfaces müssen von der Erbenden Klasse zur gänze erfüllt werden, alle Member müssen in der Klasse implementiert werden. Bei Abstrakten Klassen hingegen müssen nur die Member die mit dem Schlüsselwort abstract gekennzeichnet sind überschrieben werden. In Abstrakten Klassen können auch implementierte Member vorkommen (nicht mit abstract gekennzeichnet) und können direkt in der erbenden Klasse verwendet werden.
+</span>  
+
+<span style="color:darkblue">
+Interfaces geben eine klare Struktur (Bauform) vor die erfüllt werden muss. Wenn in einer Klasse ein Member hinzugefügt wird muss dieser auch im Interface hinzugefügt werden und umgekehrt. Abstrakte Klassen können Member beinhalten die nicht überschrieben werden müssen und direkt verwendet werden können.  
+</span>  
+
+<span style="color:darkblue">
+</span>
+
+Beispiel:
+
+```csharp
+        class Program
+    {
+        static void Main(string[] args)
+        {
+            B person = new B();
+            person.print();
+
+            // Implementierte Methode in der abstracten Klasse
+            person.PrintAge();
+            Console.ReadKey();
+        }
+    }
+
+    abstract public class A
+    {
+        private int age = 27;
+        
+        //Abstract muss überschrieben werden
+        public abstract void print();
+
+        //wird weitervererbt und kann verwendet werden
+        public void PrintAge()
+        {
+            Console.WriteLine("Alter: " + age);
+        }
+    }
+
+    public class B : A
+    {
+        private string job = "programmer";
+        
+        //Überschrieben Methode
+        public override void print()
+        {
+            Console.WriteLine($"Martin arbeitet als {job}");
+        }
+    }
+
+    // Output: 
+    // Martin arbeitet als programmer
+    // Alter: 27
+```
 
 
 ### Observer Pattern (Hlavacek)
