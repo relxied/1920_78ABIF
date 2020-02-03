@@ -10,6 +10,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reflection", "Reflection", "{ED610826-2AD9-4D36-87BD-B551CF0B8366}"
+	ProjectSection(SolutionItems) = preProject
+		Reflection.md = Reflection.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Eventhandling", "Eventhandling", "{AEA551E7-D89E-48C7-8E4B-B7E67B247D75}"
+	ProjectSection(SolutionItems) = preProject
+		Events.md = Events.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
