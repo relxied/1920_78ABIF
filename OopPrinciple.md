@@ -45,7 +45,7 @@ Verwendete Zugriffsarten in C#:
 + **protected (#)**  
   Nur für Objekte der eigenen Klasse und von Spezialisierungen derselben zugreifbar
 #### Vererbung
-#### Allgemeine Typen der Vererbung (Inheritance):
+##### Allgemeine Typen der Vererbung (Inheritance):
 In der OOP gibt es einige Arten der Vererbung. Die nachstehenede Liste beschreibt diese und erläutert, welche der vier angeführten Vererbungen in C# möglich sind.
 + **Einfache Vererbung (single inheritance)**
   Mit der einfachen Vererbung erbt eine Klasse von der anderen. Dies ist ein mögliches Szenario in C#
@@ -131,3 +131,39 @@ public abstract class GenericController<I, M> : ControllerBase
 
 ```
 #### Polymorphismus
+Polymorphie erlaubt eine dynamische Methodenauswahl zur Laufzeit. Der Compiler erzeugt dazu eine virtuelle Liste mit allen möglichen Methoden, die zur Laufzeit in Frage kommen. Erst zur Laufzeit wird anhand des Typs entschieden, welche Methode aufgerufen wird.
+```
+public class Shape
+{
+    public virtual void Draw() => Console.WriteLine($"Shape with {Position} and {Size}");
+}
+
+public class Position
+{
+    public int X { get; set; }
+    public int Y { get; set; }
+    public ovverride string ToString() => $"X: {X}, Y: {Y}"
+}
+
+public class Size
+{
+    public int Width { get; set; }
+    public int Height { get; set; }
+    public ovverride string ToString() => $"Width: {Width}, Height: {Height}"
+}
+
+public class Rectangle : Shape
+{
+    public override void Draw() => Console.WriteLine($"Rectangle with {Position} and {Size}")
+}
+
+public class Main()
+{
+    var r = new Rectangle();
+    r.Position.X = 33;
+    r.Position.Y = 22;
+    r.Size.Width = 200;
+    r.Size.Height = 100;
+    r.Draw()                // Rechtangle with X: 33, Y: 22 and Width: 200, Height: 100
+}
+```
