@@ -61,18 +61,18 @@ Alle Fragen in diesem Abschnitt betreffen objektorientierte Programmier-Aspekte 
 ### Allgemein
 **Ordner:** Generally
 
-- Erklären Sie die Konzepte der Unified Modeling Language – UML in Bezug auf die objektorientierten Programmierung (Diagrammtypen mit Erläuterung über die Syntax).  (Mühleder)
+- Erklären Sie die Konzepte der Unified Modeling Language – UML in Bezug auf die objektorientierten Programmierung (Diagrammtypen mit Erläuterung über die Syntax).  
 **Datei:** UmlDiagrams.md
-- Erstellen Sie ein UML/CLD für ein Beispiel Ihrer Wahl und erläutern Sie alle Möglichkeiten dieses Diagrammtyps (falls notwendig, können auch mehrere Beispiele angegeben werden).  (Mühleder)
+- Erstellen Sie ein UML/CLD für ein Beispiel Ihrer Wahl und erläutern Sie alle Möglichkeiten dieses Diagrammtyps (falls notwendig, können auch mehrere Beispiele angegeben werden).
 **Datei:** UmlClassDiagrams.md
-- Erläutern Sie wie die Relationen zwischen Klassen aus dem UML/CLD in der OOP implementiert werden (verwenden Sie zur Erläuterung ein Beispiel).	(Mühleder)
-- Erläutern Sie oberflächliches und tiefes Klonen von Objekten (auf welche Arten können Objekte geklont werden)		(Mühleder)
+- Erläutern Sie wie die Relationen zwischen Klassen aus dem UML/CLD in der OOP implementiert werden (verwenden Sie zur Erläuterung ein Beispiel).
+- Erläutern Sie oberflächliches und tiefes Klonen von Objekten (auf welche Arten können Objekte geklont werden)	(Mühleder)
 **Datei:** CloneCopy.md
-- Erklären Sie die Gleichheit von Objekten (erklären Sie wann 2 Objekte gleich sind und erläutern Sie den Equals/HashCode Vertrag).  
+- Erklären Sie die Gleichheit von Objekten (erklären Sie wann 2 Objekte gleich sind und erläutern Sie den Equals/HashCode Vertrag).  (Mühleder)
 **Datei:** EqualsHashCode.md
 - Erläutern Sie die Arbeits- und Funktionsweise des Garbage-Collectors  (Engleder)
 **Datei:** Garbage.md
-- Erklären Sie die Bedeutung und den Vorteil eines  'Einheitliches Typsystem'  
+- Erklären Sie die Bedeutung und den Vorteil eines  'Einheitliches Typsystem'  (Mühleder)
 **Datei:** TypeSystem.md
 - Erläutern Sie das 'Boxing und Unboxing' (geben Sie dazu ein Beispiel an)  
 **Datei:** BoxingAndUnboxing.md

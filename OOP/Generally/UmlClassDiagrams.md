@@ -1,1 +1,0 @@
-- Erstellen Sie ein UML/CLD für ein Beispiel Ihrer Wahl und erläutern Sie alle Möglichkeiten dieses Diagrammtyps (falls notwendig, können auch mehrere Beispiele angegeben werden).
