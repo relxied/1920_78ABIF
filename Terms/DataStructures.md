@@ -84,6 +84,6 @@
     4: Anazhl der Elemente in der Collection    
     5: Element in der Collection enthalten
 ##### Ausgabe:
-  ![alt text](CollectionOutput.png "Collection Output") 
+  ![alt text](CollectionOutput.PNG "Collection Output") 
 
 
