@@ -1,3 +1,7 @@
+### OOP - Klonen von Objekten ###
+----
+#### Markus Mühleder
+---
 - Erläutern Sie oberflächliches und tiefes Klonen von Objekten (auf welche Arten können Objekte geklont werden)
 ---
 #### Oberflächliches Klonen

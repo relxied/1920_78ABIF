@@ -1,3 +1,7 @@
+### OOP - Equals() / GetHashCode() ###
+----
+#### Markus Mühleder
+---
 - Erklären Sie die Gleichheit von Objekten (erklären Sie wann 2 Objekte gleich sind und erläutern Sie den Equals/HashCode Vertrag)
 ----
 Grundsätzlich wird zwischen Typengleichehit, Wertgleichheit und Verweisgleichheit unterschieden.

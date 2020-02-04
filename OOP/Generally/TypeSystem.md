@@ -1,3 +1,7 @@
+### OOP - Einheitliches Typsystem ###
+----
+#### Markus Mühleder
+---
 - Erklären Sie die Bedeutung und den Vorteil eines  'Einheitliches Typsystem'
 - -----
 Ein einheitliches Typsystem bedeutet, dass alle Typen von einem gemeinsamen Basistyp abgeleitet und daher zu diesem kompatibel sind. In C# heißt dieser gemeinsame Basistyp object (System.Object). Referenztypen sind direkt zu object kompatibel, Werttypen werden durch Boxing zu object kompatibel gemacht. 
