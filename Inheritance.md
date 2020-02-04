@@ -3,6 +3,74 @@
 
 - Erklären Sie die Relation der _Vererbung_ und geben Sie Entscheidungshilfen zur Evaluierung von _Vererbungsstrukturen_ an (nennen Sie mindestens ein Beispiel für eine gültige und eine ungültige Vererbung).  
 
+<span style="color:darkblue">Durch Vererbung ist esmöglich Klassen zu erweitern. Die public Member der Oberklasse werden an die erbende Klasse weitervererbt. Dabei spricht man auch von einer is-a (ist ein) beziehung.
+</span>
+
+Beispiel:
+
+Animal (Oberklasse)  
+Dog (erbende Klasse) Dog **is a** Animal  
+Cat (erbende Klasse) Cat **is a** Animal  
+Duck (erbende Klasse) Duck **is a** Animal, und hat zusätzlich 2 Flügel
+
+```csharp
+public class Animal
+{
+    public DateTime BirthDate{get; set;}
+    public int Legs{get; set;}
+}
+
+public class Dog : Animal
+{
+    public Dog()
+    {
+        BirthDate = DateTime.Now;
+        Legs = 4;
+    }
+}
+public class Cat : Animal
+{
+    public Cat()
+    {
+        BirthDate = DateTime.Now;
+        Legs = 4;
+    }
+}
+
+public class Duck : Animal
+{
+    public int Wings{get; set;} //Erweiterung der Oberklasse
+    public Duck()
+    {
+        BirthDate = DateTime.Now;
+        Legs = 2;
+        Wings = 2;
+    }
+}
+```
+
+Ungültiges Beispiel:
+
+Dog (Oberklasse)  
+Cat (erbende Klasse) Cat **is ++not++ a** Dog  
+```csharp
+
+public class Dog 
+{
+    public DateTime BirthDate{get; set;}
+    public int Legs{get; set;}
+}
+public class Cat : Dog
+{
+    public Cat()
+    {
+        BirthDate = DateTime.Now;
+        Legs = 4;
+    }
+}
+```
+Es würde zwar funktionieren da die beiden Klassen die gleichen Member beinhalten aber es sorgt für verwirrung ung kann zu komplikationen bei Änderungen führen.
+
 - Erklären Sie welche Bedeutung die _Konstruktoren_ in der Vererbung haben und geben Sie anhand eines Beispiels an, wie die unterschiedlichen _Konstruktoren_ miteinander verkettet werden können.  
 
 <span style="color:darkblue">Konstruktor der Oberklasse(ClassA) kann in der  ErbendenKlasse (ClassB) verwendet werden. Dafür muss das Schlüsselwort :base() an  den Konstruktor der Erbenden Klasse(ClassB) angehängt werden. Parameter können  mit dem Schlüsselwort :base() an den Konstruktor der Oberklasse weitergegeben werden. Durch das Schlüsselwort :base() wird immer zuerst der Konstruktor der Oberklasse aufgerufen (ClassA) bevor der Block des Konstruktors (ClassB) aufgerufen wird. Dadurch wird Kodeverdoppelung vermieden.
@@ -116,6 +184,78 @@ public ClassA : IEntityObject
 
 - Erklären Sie das Konzept 'Polymorphie' und geben Sie ein konkretes Beispiel, welches den Einsatz dieses Konzeptes demonstriert, an.
 
+<span style="color:darkblue"> Polymorphie bedeutet Vielgestaltigkeit oder im englischen multiple forms. Überschriebene Methoden (virtual & override) sind dynamisch gebunden, deshalb erfüllen sie das Konzept der Polimorphie da sie in der jeweiligen Klasse eine andere Aufgabe erfüllen (andere Form annehmen) dieses Konzept wird auch Run-Time-Polymorphism gennant.
+Compile-Time-Polimorphism kann durch Methodenüberladung geschaffen werden, da die Methode den gleichen Namen hat, jedoch andere Parameter übernimmt. Durch die Überladung und der Parameterübergabe weiß der Compiler welche Methode verwendet werden soll.
+</span>  
+
+Beispiel:  
+
+Compile-Time-Polimorphism
+```csharp
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            A a = new A();
+            a.PrintInfo();          //Output: C#
+            a.PrintInfo("is cool!"); //Output: C# is cool!
+            Console.ReadKey();
+        }
+    }
+
+    public class A
+    {
+        public void PrintInfo()
+        {
+            Console.WriteLine("C#");
+        }
+
+        public void PrintInfo(string message)
+        {
+            Console.WriteLine($"C# {message}");
+        }
+    }
+
+    // Output: C#
+    //         C# is cool!
+```
+
+Run-Time-Polymorphism
+
+
+```csharp
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            A a = new A();
+            a.PrintInfo(); //Output: C#
+            B b = new B();
+            b.PrintInfo(); //Output: C# is cool!
+            Console.ReadKey();
+        }
+    }
+
+    public class A
+    {
+        public virtual void PrintInfo()
+        {
+            Console.WriteLine("C#");
+        }
+
+    }
+
+    public class B : A
+    {
+        public override void PrintInfo()
+        {
+            Console.WriteLine("C# is cool!");
+        }
+    }
+```
+
 - Erklären Sie das „_Überschreiben von Instanzmethoden_&quot; und das dynamische Binden von Methoden (verwenden Sie zur Erläuterung ein konkretes Beispiel).
 
 <span style="color:darkblue">Um eine Methode überschreiben zu können muss diese mit **abstract** oder **virtual** gekennzeichnet sein. Methoden die mit **virtual** gekennzeichnet sind, **können** überschrieben werden, **abstract** Methoden **müssen** überschrieben werden.  
@@ -125,6 +265,17 @@ Mit dem Schlüsselwort ++*override*++ muss die Methode gekennzeichnent werden die
 Beispiel:
 
 ```csharp
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            B b = new B();
+            b.PrintInfo();
+            Console.ReadKey();
+        }
+    }
+
     public class A
     {
         private string name = "Martin";
@@ -320,13 +471,15 @@ public ClassA : IIdentifiable, ICopyName
 
 - Stellen Sie die beiden Konzepte _Vererbung_ und _Komposition_ gegenüber und geben Sie Entscheidungshilfen zur richtigen Konzeptauswahl an.
 
+<span style="color:darkblue">Vererbung (is-a) beziehung, Komposition (has-a) beziehung. Durch Vererbung werden is-a beziehungen geknöpft. Das heisst die Erbende Klasse ist eine erweiterung der Oberklasse. Deshalb kann die Oberklasse ohne die erbende Klasse existieren. Bei einer Komposition ist eine has-a Beziehung vorhanden, das heisst, dass die zwei Klassen voneinander enkoppelt sind, und somit unabhängig agieren können.
+</span>  
+
 - Stellen Sie die beiden Konzepte _Abstrakte Klassen_  und _Interfaces_  gegenüber und geben Sie Entscheidungshilfen zur richtigen Konzeptauswahl an.
 
 <span style="color:darkblue"> Interfaces müssen von der Erbenden Klasse zur gänze erfüllt werden, alle Member müssen in der Klasse implementiert werden. Bei Abstrakten Klassen hingegen müssen nur die Member die mit dem Schlüsselwort abstract gekennzeichnet sind überschrieben werden. In Abstrakten Klassen können auch implementierte Member vorkommen (nicht mit abstract gekennzeichnet) und können direkt in der erbenden Klasse verwendet werden.
 </span>  
 
-<span style="color:darkblue">
-Interfaces geben eine klare Struktur (Bauform) vor die erfüllt werden muss. Wenn in einer Klasse ein Member hinzugefügt wird muss dieser auch im Interface hinzugefügt werden und umgekehrt. Abstrakte Klassen können Member beinhalten die nicht überschrieben werden müssen und direkt verwendet werden können.  
+<span style="color:darkblue">Interfaces geben eine klare Struktur (Bauform) vor die erfüllt werden muss. Wenn in einer Klasse ein Member hinzugefügt wird muss dieser auch im Interface hinzugefügt werden und umgekehrt. Abstrakte Klassen können Member beinhalten die nicht überschrieben werden müssen und direkt verwendet werden können.  
 </span>  
 
 <span style="color:darkblue">
