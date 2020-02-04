@@ -1,4 +1,6 @@
 # Prinzipien
+**Ordner:** Principle  
+**Datei:** OopPrinciple.md
 ## by Martin Pechak
 ## Erklären Sie die folgenden Prinzipien, die in der OOP angewendet werden (gegebenenfalls können Sie auf die Prozedurale Programmierung verweisen):
 - Abstraktion,
@@ -8,10 +10,10 @@
 
 ## Antworten
 #### Abstraktion
-Als Abstraktion versteht man nur diejenigen Dinge von einem Objekt zu nehmen, die auch benötigt werden.
+Als Abstraktion versteht man nur diejenigen Dinge von einem Objekt zu nehmen, die auch benötigt werden.  
 Abstraktion einers Schülers:
 ```
-public class Pupil() : Person
+public class Pupil()
 {
     public string Firstname { get; set; }
     public string Lastname { get; set; }
@@ -21,7 +23,7 @@ public class Pupil() : Person
 ```
 Abstraktion eines Lehrers:
 ```
-public class Teacher() : Person
+public class Teacher()
 {
     public string Firstname { get; set; }
     public string Lastname { get; set; }
@@ -36,7 +38,7 @@ Das obige Beispiel zeigt deutlich welche Merkmale eines Schülers und welche eine
 Als Datenkapselung versteht man das Verbergen von Informationen vor dem direkten Zugriff von außen.
 Ein direkter Zugriff auf die interne Datenstruktur wird damit unterbunden und wird per definierte Schnittstellen (Interfaces) ermöglicht.
 In der Objektorientierten Programmierung (OOP) ist die Datenkapselung auch ein wichtiges Prinzip.  
-Sie wird verwendet, damit Klassen nicht den internen Zustand anderer Klassen lesen oder sogar verändern können. Durch die Kapselung werden nur Angaben über das "WAS" (Funktionswiese) nach außen sichtbar aber nicht das "WIE" (die interne Darstellung)
+Sie wird verwendet, damit Klassen nicht den internen Zustand anderer Klassen lesen oder sogar verändern können. Durch die Kapselung werden nur Angaben über das "WAS" (Funktionswiese) nach außen sichtbar aber nicht das "WIE" (die interne Darstellung)  
 Verwendete Zugriffsarten in C#:
 + **public (+)**  
   Zugreifbar für alle Objekte (auch die der anderen Klassen)
@@ -44,6 +46,7 @@ Verwendete Zugriffsarten in C#:
   Nur für Objekte der eigenen Klasse zugreifbar
 + **protected (#)**  
   Nur für Objekte der eigenen Klasse und von Spezialisierungen derselben zugreifbar
+
 #### Vererbung
 ##### Allgemeine Typen der Vererbung (Inheritance):
 In der OOP gibt es einige Arten der Vererbung. Die nachstehenede Liste beschreibt diese und erläutert, welche der vier angeführten Vererbungen in C# möglich sind.
@@ -60,7 +63,7 @@ public class B : A
 }
 ```
 + **Mehrfache Vererbung (multiple inheritance)**
-  Die mehrfache Vererbung erlöaubt es , dass eine Klasse von mehreren Basis-Klassen ableitet. Dieses Szenario ist in C# nicht möglich, es gibt jedoch die Möglichkeit, von mehreren Schnittstellen (Interfaces) abzuleiten  
+  Die mehrfache Vererbung erlaubt es, dass eine Klasse von mehreren Basis-Klassen ableitet. Dieses Szenario ist in C# nicht möglich, es gibt jedoch die Möglichkeit, von mehreren Schnittstellen (Interfaces) abzuleiten  
 
 Folgene Darstellung ist in C# **nicht** möglich!
 ```
@@ -101,7 +104,8 @@ public class C : B
 ```
 
 + **Schnittstellen Vererbung (inferface inheritance)**
-  Die Schnittstellen verebbung ermöglicht, dass eine Klasse oder eine Schnittstelle von mehreren Schnittstellen ableitet.
+  Die Schnittstellen Verebbung ermöglicht, dass eine Klasse oder eine Schnittstelle von mehreren Schnittstellen ableitet.
+
 ```
 public interface IIdentifiable
 {
@@ -157,7 +161,7 @@ public class Rectangle : Shape
     public override void Draw() => Console.WriteLine($"Rectangle with {Position} and {Size}")
 }
 
-public class Main()
+static void Main(string[] args)
 {
     var r = new Rectangle();
     r.Position.X = 33;

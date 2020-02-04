@@ -17,7 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Principle", "Principle", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concepts", "Concepts", "{468758DC-F22C-4EFA-AC77-60AA21833472}"
 	ProjectSection(SolutionItems) = preProject
+		adder.png = adder.png
+		cw.png = cw.png
 		OopConcepts.md = OopConcepts.md
+		operatorFail.png = operatorFail.png
+		result.png = result.png
 	EndProjectSection
 EndProject
 Global
