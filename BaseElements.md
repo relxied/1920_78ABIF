@@ -1,1 +1,0 @@
-**Basiselement des Programmierablaufs**
