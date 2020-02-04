@@ -16,6 +16,8 @@ Beschreiben Sie das Muster nach den folgenden Punkten:
 - Anwendbarkeit
   - Hardware Resourcen
   - von mehreren Klassen verwendete Klasse(Proxy, Verteiler,...)
+  - Datenbankverbindungen
+  - Netzwerk verbindungen
   - ...
 - Struktur des Musters
   class MySingleton{
