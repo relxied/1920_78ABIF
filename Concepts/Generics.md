@@ -1,3 +1,5 @@
+### Technik/Generische Typen (Seidl)
+
 - Erklären Sie die Technik 'Generizität' und erläutern Sie die Verwendung dieser Technik (konstruieren Sie ein einfaches Beispiel).
 
 In der Programmierung kommt es immer wieder vor das bestimmte standardisierte Strukturen, immer wieder mit verschiedenen Typen benötigt werden.
