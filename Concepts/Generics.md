@@ -21,7 +21,7 @@ class List<T> {
 
 In C Beispielsweise konnten void Zeiger auf alle Datentypen verweisen, auf diese Weise konnte der Datentyp ebenfalls ausgetauscht werden.
 
-``
+```
 struct Node {
   Node* next
   void* value;
@@ -49,7 +49,7 @@ struct Stack{
     return value;
   }
 }
-``
+```
 
 - Was sind Einschränkungen und welche Bedeutung haben diese im Bezug auf Generische Typen (skizzieren Sie ein Beispiel)?
   Das Problem hierbei bei der Zeiger bassierten Verknüpfung ist, das der Aufrufer wissen muss welchen Typ er im endeffekt erhält um wieder
