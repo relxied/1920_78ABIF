@@ -8,14 +8,14 @@ Ein Beispiel in unserem Programm benötigen wir sowohl eine List für Strings, a
 
 Statt nun die Struktur für jeden Typ extra anzulegen, greift man daher auf die Verwendung von Generics zurück um den Typ austauschen zu können.
 
-``
+```
 class List<T> {
   T get(int index);
   T add(T element);
   bool remove(T element);
   ...
 }
-``
+```
 
 - Generizität ist eine sehr junge Programmiertechnik. Wie konnte man vor Einführung dieser Technik bestimmte Merkmale dieser Technik dennoch nachbilden (erläutern Sie dies anhand der abstrakten Datenstruktur 'Stack').
 
