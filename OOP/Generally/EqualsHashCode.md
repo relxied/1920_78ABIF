@@ -1,6 +1,6 @@
 - Erklären Sie die Gleichheit von Objekten (erklären Sie wann 2 Objekte gleich sind und erläutern Sie den Equals/HashCode Vertrag)
 ----
-Grundsätzlich wird zwischen Typengleichehit, Wertgleichheit und Verweisgleichheit.
+Grundsätzlich wird zwischen Typengleichehit, Wertgleichheit und Verweisgleichheit unterschieden.
 #### Verweisgleichheit ####
 Beide Instanzen greifen auf den Selben Speicher zu, Equalsoperator muss nicht überschriben werden.
 <pre><code class='language-cs'>
@@ -38,7 +38,7 @@ Wertegelichheit besteht wenn die Werte zweier Instanzen gleich sind und geht gru
 </pre></code>
 
 
-Wird Equals() überschieben so muss auch immer GetHashCode() überschrieben werden.
+Wird Equals() überschieben so muss auch immer GetHashCode() überschrieben werden um die erfüllung der Verträge zu gewährleisten.
 
 
 
@@ -55,7 +55,17 @@ Implementations of Equals must not throw exceptions; they should always return a
 
 #### HashCode Vertrag #####
 
-internal consistency : Der Wert von hashCode () kann sich nur ändern, wenn a 
-Eigenschaft, die sich in equals () ändert equals Konsistenz : Objekte, die einander gleich sind, müssen 
-gib den gleichen Hashcode zurück collisions : ungleiche Objekte können den gleichen Hash-Code haben 
+- Immer, wenn GetHashCode() für dasselbe Objekt mehrmals aufgerufen wird 
+muss bei der Ausführung muss GetHashCode() den gleichen Wert konsistent zurückgeben, vorausgesetzt, es werden keine Informationen geändert, die für Vergleiche mit gleichen Objekten verwendet werden. Dieser Wert muss nicht konsistent von einer Ausführung einer Anwendung zu einer anderen Ausführung derselben Anwendung bleiben 
+- Wenn zwei Objekte nach der Methode equals (Object) gleich sind, 
+und Sie dann die Methode hashCode () für jedes der beiden Objekte aufrufen, muss derselbe Wert erzeugt werden 
+- Es ist nicht erforderlich, dass wenn zwei Objekte ungleich sind 
+der Hashwert ungleich ist jedoch ist ein eindeutiges ganzzahliges Ergebnis für ungleiche Objekte Leistungssteigernd für Hashtables
+
+Dont's beim Hashcode (msdn):
+- Do not serialize hash code values or store them in databases.
+- Do not use the hash code as the key to retrieve an object from a keyed collection.
+- Do not send hash codes across application domains or processes. In some cases, hash codes may be computed on a per-process or per-application domain basis.
+- Do not use the hash code instead of a value returned by a cryptographic hashing function if you need a cryptographically strong hash. For cryptographic hashes, use a class derived from the System.Security.Cryptography.HashAlgorithm or System.Security.Cryptography.KeyedHashAlgorithm class.
+- Do not test for equality of hash codes to determine whether two objects are equal. (Unequal objects can have identical hash codes.) To test for equality, call the ReferenceEquals or Equals method.
 

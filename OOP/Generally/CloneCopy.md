@@ -8,19 +8,13 @@ Dies beinhaltet das Kopieren des Inhalts eines Objekts in eine andere Instanz de
 public Person(Person person) //Konstruktor für oberflächliches Klonen
         {
             Name = person.Name;
-         
-            if (person.Mum != null)
-            {
-                Mum = person.Mum;
-            }
-            if (person.Dad != null)
-            {
-                Dad = person.Dad;
-            }      
+            Mum = person.Mum;
+            Dad = person.Dad;                
         }
 
 ...... Anwendung
-                        Person p1 = new Person("Peter Hans");
+
+            Person p1 = new Person("Peter Hans");
             p1.Mum = new Person("Mum of Hans");
             p1.Dad = new Person("Dad of Hans");
 
@@ -35,10 +29,8 @@ Dabei wird der Inhalt eines Objekts verwendet, um eine weitere Instanz derselben
 <pre><code class='language-cs'>
         public Person(Person person) //Konstruktor für tiefes Klonen
         {
-            if (!string.IsNullOrEmpty(person.Name))
-            {
-                Name = new Person(person.Name);
-            }
+            Name = new Person(person.Name);
+            
             if (person.Mum != null)
             {
                 Mum = new Person(person.Mum);
