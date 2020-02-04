@@ -482,9 +482,6 @@ public ClassA : IIdentifiable, ICopyName
 <span style="color:darkblue">Interfaces geben eine klare Struktur (Bauform) vor die erfüllt werden muss. Wenn in einer Klasse ein Member hinzugefügt wird muss dieser auch im Interface hinzugefügt werden und umgekehrt. Abstrakte Klassen können Member beinhalten die nicht überschrieben werden müssen und direkt verwendet werden können.  
 </span>  
 
-<span style="color:darkblue">
-</span>
-
 Beispiel:
 
 ```csharp
@@ -530,15 +527,3 @@ Beispiel:
     // Martin arbeitet als programmer
     // Alter: 27
 ```
-
-
-### Observer Pattern (Hlavacek)
-**Datei** Observer.md
-
-Beschreiben Sie das Muster nach den folgenden Punkten:
-
-- Klassifikation
-- Zweck
-- Entwurfsproblem und wie das Muster das Problem löst
-- Anwendbarkeit
-- Struktur des Musters
