@@ -32,17 +32,14 @@ public static void Deserialize()
     IFormatter formatter = new BinaryFormatter();
     Stream stream = new FileStream(filepath, FileMode.Open, FileAccess.Read);
     var tests = (List<Test>)formatter.Deserialize(stream);
-
 }
-
 ```
-
+<br/>
 
 ### Serialisierung und Deserialisierung ist eine wichtige Basistechnik für weitere höhere (Architektur-)Konzepte. Nennen Sie eine weitere Technik, welche Serialisierung und Deserialisierung als Basis verwendet.
 
-remoteservices
-signal a 
-https://www.it-visions.de/glossar/alle/835/lexikon.aspx
+#### z.B.: .NET Remoting
 
- .NET Remoting
-
+".Net Remoting" ist ein Technologie die Serealisierung als Basis hat, Serealisierung wird eingesetztz bei der Übertragung des Fernaufrufs.
+Zur Übertragung des Fernaufrufs wird ein **Formatter** eingesetzt.
+Ein **Formatter** ist ein Mechanismus, der ein Objekt in einen Byte-Strom umzuwandelt bzw. zurückwandelt. Das ist Serealisierung, bzw. Deserealisierung!
